@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/back_icon.xml" value="0.14" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/back_icon_2.xml" value="0.14" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/button_add_minus.xml" value="0.1745" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/location_icon.xml" value="0.1415" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/round.xml" value="0.1745" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/round_2.xml" value="0.1745" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/round_3.xml" value="0.1745" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/round_4.xml" value="0.181" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/round_rectangle.xml" value="0.1745" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/drawable/splash_image.xml" value="0.1745" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/admin_manage_order.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/admin_page.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/advertisement.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/customer_info_page.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/dong_admin_manageorder.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/dong_cart.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/dong_home_advertisement.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/dong_mon_an_favourite.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/dong_mon_an_home.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/dong_mon_an_viewall.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/dong_order_user.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/dong_restaurant.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/favourite_page.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/favourite_single_food.xml" value="0.4" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/food_name.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/home_advertisement.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/home_bar.xml" value="0.2" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/home_page.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/insert_food_img.xml" value="0.13722826086956522" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/layout_monan.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/layout_user_information.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/list_order.xml" value="0.13722826086956522" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/manage_order.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/mon_an.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/mon_an_2.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/order.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_admin.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_cart.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_favourite.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_fooddetail.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_home.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_login.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_restaurant.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_restaurant_food.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_signup.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_user.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/page_viewall.xml" value="0.24583333333333332" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/result.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/sign_up_page.xml" value="0.13722826086956522" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/splash_screen.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/user_information.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/user_manage_order.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/user_manageorder.xml" value="0.25" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/user_order.xml" value="0.264" />
+        <entry key="..\:/HK II 2021-2022/Lap trinh di dong/Foody/app/src/main/res/layout/view_all_item_page.xml" value="0.16799999999999998" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

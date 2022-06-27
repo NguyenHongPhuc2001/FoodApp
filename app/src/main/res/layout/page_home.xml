@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar_Home"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FC4F4F">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_Home_Search"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:cardCornerRadius="20dp">
+
+            <SearchView
+                android:id="@+id/sv_Home"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                app:queryHint="Search..." />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_Home_DanhsachRes"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#faedcd"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_Home"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Danh sách nhà hàng"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_Home_ViewAllRes"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="View All"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_Home_DanhsachRes"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_Home" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_Home_QuangCao"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_Home_DanhsachRes">
+
+        <ListView
+            android:id="@+id/ls_Home_Res"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_Home_MonNgon"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#faedcd"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_Home_QuangCao">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Món ngon hôm nay"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/button_Home_ViewAll"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="View All"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/layout_Home_ListFood"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_Home_MonNgon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_Home_QuangCao" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_Home_ListFood"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/button_Home_ViewAll">
+
+        <ListView
+            android:id="@+id/listview_Home_ListAllFood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_HomeBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FC4F4F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/img_Home_HomeIcon"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/home_selected_icon" />
+
+        <ImageView
+            android:id="@+id/img_Home_FavouriteIcon"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/img_Home_HomeIcon"
+            android:src="@drawable/favourite_icon" />
+
+        <ImageView
+            android:id="@+id/img_Home_ShopingCartIcon"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/img_Home_FavouriteIcon"
+            android:src="@drawable/shopingcart_icon" />
+
+        <ImageView
+            android:id="@+id/img_Home_AccountIcon"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/img_Home_ShopingCartIcon"
+            android:src="@drawable/account_icon" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

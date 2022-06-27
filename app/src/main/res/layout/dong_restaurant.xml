@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_MonAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_Home_Res"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/single_food" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textview_Home_ResName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Tên quán"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_MonAn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/textview_Home_ResAddress"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:textSize="15dp"
+        android:textColor="#283618"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_MonAn"
+        app:layout_constraintTop_toBottomOf="@+id/textview_Home_ResName"
+        app:layout_constraintBottom_toTopOf="@+id/cardview_Home_StarNB" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_Home_StarNB"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        app:cardBackgroundColor="#f94144"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_MonAn"
+        app:layout_constraintTop_toBottomOf="@+id/textview_Home_ResAddress"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_MonAn_StarNB"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/star_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textview_Home_ResStarNB"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_Home_ResStarNB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="4.5"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toRightOf="@id/img_MonAn_StarNB"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

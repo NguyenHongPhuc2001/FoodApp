@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar_ViewAll_Search"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout_cart_ListFood"
+        android:background="#FC4D4D">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_ViewAll_SearchBar"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="10dp">
+
+            <SearchView
+                android:id="@+id/searchview_Viewall"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                app:queryHint="Search..."/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cart_ListFood"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:descendantFocusability="blocksDescendants"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ViewAll_Search">
+
+        <ListView
+            android:id="@+id/listview_cart_ListFood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_Viewall_HomeBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FC4D4D"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/img_Viewall_HomeIcon"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/img_Viewall_FavouriteIcon"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/img_Viewall_HomeIcon"
+            android:src="@drawable/favourite_icon" />
+
+        <ImageView
+            android:id="@+id/img_Viewall_ShopingCartIcon"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/img_Viewall_FavouriteIcon"
+            android:src="@drawable/cart_select" />
+
+        <ImageView
+            android:id="@+id/img_Viewall_AccountIcon"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/img_Viewall_ShopingCartIcon"
+            android:src="@drawable/account_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textCartView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:text="Giá"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="#ffcdb2"
+        app:layout_constraintTop_toBottomOf="@+id/layout_cart_ListFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_Cart_Pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Thanh toán"
+        android:background="@drawable/round_3"
+        app:layout_constraintTop_toBottomOf="@+id/textCartView"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

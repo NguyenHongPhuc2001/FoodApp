@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="274dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's find yummy food.."
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textColor="#FC4F4F"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/imgFacebook"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo_fb" />
+
+        <ImageView
+            android:id="@+id/imgGmail"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/imgFacebook"
+            android:src="@drawable/logo_gmail" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_Signup_UserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_rectangle"
+        android:hint="User Name "
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edt_Signup_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_rectangle"/>
+
+    <EditText
+        android:id="@+id/edt_Signup_CFPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Confirm Password"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_rectangle"/>
+
+    <Button
+        android:id="@+id/btn_Log_From_Sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log in"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/btn_Signup"
+        android:layout_width="187dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round"
+        android:text="sign up"
+        android:textSize="30dp" />
+
+
+</LinearLayout>

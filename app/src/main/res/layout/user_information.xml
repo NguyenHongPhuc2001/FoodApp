@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_UserInfo_ImageCus"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_UserInfo"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/img_UserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cus_img"/>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoput_UserInfo_Information"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_UserInfo_ImageCus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/textview_UserInfo_Ten"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Tên: "
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/texview_UserInfo_Name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Thị A"
+            android:textColor="#0d3b66"
+            android:textSize="22dp"
+            android:textStyle="italic"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/textview_UserInfo_Ten"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAlignment="center"/>
+
+
+
+        <TextView
+            android:id="@+id/textview_UserInfo_SoDienThoai"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại: "
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="60dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textview_UserInfo_Ten"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/texview_UserInfo_PhoneNB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="0392876554"
+            android:textColor="#0d3b66"
+            android:textSize="22dp"
+            android:layout_marginTop="60dp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/texview_UserInfo_Name"
+            app:layout_constraintLeft_toRightOf="@+id/textview_UserInfo_Ten"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAlignment="center"/>
+
+
+
+        <TextView
+            android:id="@+id/textview_UserInfo_Tuoi"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Tuổi: "
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="60dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textview_UserInfo_SoDienThoai"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/texview_UserInfo_Age"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="29"
+            android:textColor="#0d3b66"
+            android:textSize="22dp"
+            android:layout_marginTop="60dp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/texview_UserInfo_PhoneNB"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/textview_UserInfo_Tuoi"
+            android:textAlignment="center"/>
+
+
+
+        <Button
+            android:id="@+id/button_UserInfo_Back"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/round_2"
+            android:layout_marginBottom="30dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

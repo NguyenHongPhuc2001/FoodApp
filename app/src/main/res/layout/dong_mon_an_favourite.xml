@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_favourite"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        app:cardCornerRadius="30dp">
+        
+        <ImageView
+            android:id="@+id/img_favourite_single_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/single_food"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textview_favourite_tenmon"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Tên món ăn"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#000814"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_favourite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textview_favourite_giamon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá món ăn"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_favourite"
+        app:layout_constraintTop_toBottomOf="@id/textview_favourite_tenmon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_Order_StarNB"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#f94144"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_favourite"
+        app:layout_constraintTop_toBottomOf="@+id/textview_favourite_giamon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_Favourite_StarNB"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/star_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textview_Favourite_StarNB"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_Favourite_StarNB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="4.5"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintLeft_toRightOf="@id/img_Favourite_StarNB"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_Favourite_Addtocart"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:textColor="@color/white"
+        android:text="Add to cart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_Favourite_Delete"
+        android:background="@drawable/round"
+        android:textSize="10dp"/>
+
+    <Button
+        android:id="@+id/button_Favourite_Delete"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="Delete"
+        app:layout_constraintTop_toBottomOf="@+id/button_Favourite_Addtocart"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/round_3"
+        android:textSize="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
